@@ -145,15 +145,15 @@ body {
 
 .dashboard-grid {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  max-width: 900px;
-  width: 100%;
+  flex-direction: column; /* Forzamos lista vertical limpia en móvil */
+  align-items: center;    /* Centra las tarjetas horizontalmente */
+  gap: 1.2rem;
+  width: 100%;            /* Ocupa todo el ancho de la pantalla */
+  max-width: 450px;       /* Límite para que no se estiren de más */
+  margin: 0 auto;         /* Centra el contenedor completo */
   overflow-y: auto;
-  max-height: 55vh;
-  padding: 0.5rem;
+  max-height: 65vh;       /* Más espacio vertical para hacer scroll si hace falta */
+  padding: 0.5rem 1rem;   /* Margen interno para que no peguen en los bordes físicos del móvil */
 }
 
 .data-card {
@@ -161,8 +161,8 @@ body {
   border: 1px solid var(--glass-border);
   border-radius: 20px;
   padding: 1.2rem;
-  width: 100%;
-  max-width: 260px;
+  width: 100%;            /* Cada tarjeta se adapta al ancho del contenedor */
+  box-sizing: border-box; /* Evita que el padding rompa el tamaño */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 12px 25px rgba(0,0,0,0.4);
