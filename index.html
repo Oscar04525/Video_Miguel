@@ -69,13 +69,14 @@
       </div>
     </section>
 
+  <!-- ESCENA 5: REPRODUCTOR CINEMATOGRÁFICO LOCAL -->
     <section class="scene" id="scene5">
       <h2 class="player-headline font-cinzel">🎸 ¡Tu Concierto Especial, Papá!</h2>
       <div class="theater-frame layer-low">
-        <video id="local-player" muted playsinline webkit-playsinline controls></video>
+        <!-- Añadimos el src directo y quitamos el "muted" para que se escuche al darle al play -->
+        <video id="local-player" src="0531.mp4" playsinline webkit-playsinline controls></video>
       </div>
     </section>
-
   </main>
 
   <script src="app.js"></script>
