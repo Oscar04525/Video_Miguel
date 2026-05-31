@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-select=none">
+  <title>Feliz Cumpleaños Papá | Pro Max Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="intro-click-scene" class="overlay">
+    <div class="glass-card entrance-glow">
+      <h1 class="font-cinzel">Sorpresa para Mi Padre</h1>
+      <p>Experiencia Cinemática Móvil para Miguel</p>
+      <button id="start-btn" class="btn-primary">🎁 Iniciar Regalo</button>
+    </div>
+  </div>
+
+  <canvas id="canvas-core"></canvas>
+  <div id="progress-timeline"></div>
+  <button id="replay-btn" class="btn-secondary">🔄 Volver a Vivirlo</button>
+
+  <main class="viewport-3d" id="gyro-viewport">
+    
+    <section class="scene" id="scene1">
+      <div class="text-group-3d layer-high">
+        <h2 class="hero-name font-cinzel">Feliz Cumpleaños<br>Papá</h2>
+        <div class="hero-age font-oswald">55</div>
+      </div>
+    </section>
+
+    <section class="scene" id="scene2">
+      <div class="cake-avatar layer-high">🎂</div>
+      <div class="dashboard-grid layer-mid">
+        <div class="data-card">
+          <span class="card-icon">🌟</span>
+          <p class="card-text">¡55 años siendo un referente de vida, constancia y un orgullo diario!</p>
+        </div>
+        <div class="data-card">
+          <span class="card-icon">🥂</span>
+          <p class="card-text">¡Por una nueva etapa blindada de salud de hierro, risas y éxito brutal!</p>
+        </div>
+        <div class="data-card">
+          <span class="card-icon">❤️</span>
+          <p class="card-text">¡Gracias por guiarnos, apoyarnos y ser el mejor pilar, papá!</p>
+        </div>
+        <div class="data-card">
+          <span class="card-icon">🎉</span>
+          <p class="card-text">¡Hoy rompemos la rutina y celebramos tu día por todo lo alto!</p>
+        </div>
+        <div class="data-card">
+          <span class="card-icon">🚀</span>
+          <p class="card-text">¡Los mejores capítulos de tu historia se empiezan a escribir hoy!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="scene3">
+      <div class="matrix-counter font-oswald" id="countdown-num">3</div>
+      <span class="telemetry-label">Inicializando Transmisión Especial...</span>
+    </section>
+
+    <section class="scene" id="scene4">
+      <h2 class="climax-title font-cinzel">🎊 ¡MUCHAS FELICIDADES! 🎊</h2>
+      <h3 class="climax-subtitle">55 Años de Sabiduría e Historias Épicas</h3>
+      <div class="stream-msgs layer-mid">
+        <div class="stream-row text-gold">🎈 ¡Que se cumpla cada uno de tus sueños!</div>
+        <div class="stream-row text-pink">🌠 ¡Eres único y el mejor padre del mundo!</div>
+        <div class="stream-row text-cyan">💫 ¡Sube el volumen y disfruta de tu concierto!</div>
+      </div>
+    </section>
+
+    <section class="scene" id="scene5">
+      <h2 class="player-headline font-cinzel">🎸 ¡Tu Concierto Especial, Papá!</h2>
+      <div class="theater-frame layer-low">
+        <video id="local-player" muted playsinline webkit-playsinline controls></video>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
